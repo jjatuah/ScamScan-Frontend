@@ -1,0 +1,72 @@
+.navbar {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 20px 60px 20px 40px;
+}
+
+
+.navElements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogoDetails {
+  display: flex;
+  align-items: center;
+}
+
+.navLogoDetails > img {
+  /* height: 40px; */
+  object-fit: contain;
+  padding: 2px 8px;
+}
+
+.navLogoDetails > h2 {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #07A796;
+
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks > a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18.5px;
+  line-height: 10px;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px 15px;
+
+  color: #808080;
+}
+
+.navLinks > .button {
+  background: #06A797;
+  border-radius: 10px;
+  color: #fff;
+  /* padding: 15px; */
+  width: 115px;
+  height: 45px;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
