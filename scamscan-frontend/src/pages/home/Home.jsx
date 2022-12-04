@@ -36,13 +36,15 @@ const Home = () => {
 
           <div className="lowerSection">
             <div className="inputs">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea placeholder="Scamscan read your inputs. Start by typing or pasting in text or upload a readable picture. Let’s Start!"></textarea>
               <div className="uploadScan">
                 <div className="upload">
                   <img src={upload} alt="#" />
                   <input type="file" name="file" id="file" ref={hiddenFileInput} onChange={handleChange} style={{display:'none'}} />
                   <label onClick={handleClick}>Upload File</label>
                 </div>
+
+                <button className="scanBtn" type="submit">Scan</button>
               </div>
             </div>
 
