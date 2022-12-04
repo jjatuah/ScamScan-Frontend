@@ -1,6 +1,6 @@
 .navbar {
   background: #fff;
-  position: fixed;
+  position: sticky;
   width: 100%;
   padding: 20px 60px 20px 40px;
 }

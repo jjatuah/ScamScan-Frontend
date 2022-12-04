@@ -1,0 +1,76 @@
+.inputSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: #f3eeee;
+}
+
+/* #d8d4d4; */
+
+.inputSection > form {
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: 20px 5px;
+}
+
+.inputSection > form > .inputHeaders {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.depth > label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #333333;
+
+}
+
+.depth > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+
+  color: #333333;
+  margin: 1px 5px;
+  cursor: pointer;
+}
+
+.inputHeaders > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #333333;
+}
+
+.clock {
+  font-weight: 700;
+  font-size: 25px;
+
+  text-align: center;
+
+  color: #333333;
+}
