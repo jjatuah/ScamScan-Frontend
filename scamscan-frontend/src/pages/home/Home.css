@@ -67,6 +67,10 @@
   color: #333333;
 }
 
+.resultTag {
+  margin-left: -130px;
+}
+
 .lowerSection {
   display: flex;
   width: 100%;
@@ -144,4 +148,107 @@
 .result {
   flex: 1;
   width: 50%;
+}
+
+.blank {
+  padding: 20px 25px 1px;
+}
+
+.noScam {
+  padding: 20px 25px 1px;
+  /* background: url(../../assets/Frame.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center; */
+  position: relative;
+  display: none;
+}
+
+.scam {
+  padding: 20px 25px 1px;
+  position: relative;
+  display: none;
+}
+
+.noScamResult , .scamResult {
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 28%;
+}
+
+.noScamResult > img, .scamResult > img {
+  object-fit: contain;
+}
+
+.noScamResult > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #07A796;
+}
+
+.scamResult > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #FF0000;
+}
+
+.bg {
+  background-size: contain;
+  background-position: center;
+  height: 350px;
+  opacity: .3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 150px;
+}
+
+.bg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: unset;
+}
+
+.blankResult {
+  width: 100%;
+  height: 350px;
+  padding: 20px 25px;
+}
+
+.resultShare {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.resultShare > img {
+  object-fit: contain;
+  padding: 3px 6px;
+}
+
+.resultShare > a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  text-align: center;
+  padding: 3px 6px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 }

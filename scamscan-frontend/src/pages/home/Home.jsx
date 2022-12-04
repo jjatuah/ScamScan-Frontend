@@ -1,13 +1,23 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
 import clockImg from "../../assets/clock.png";
 import share from "../../assets/share.png";
 import upload from "../../assets/upload.png";
+import frame from "../../assets/Frame.png";
+import success from "../../assets/success.png";
+import failure from "../../assets/failure.png";
 import { AiOutlineClockCircle } from 'react-icons/ai';
 
 
 const Home = () => {
+
+  const depth = ["Basic Scan", "Advanced Scan"];
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const handleClickEvent = (index) => {
+    setSelectedIndex(index)
+  }
 
   const hiddenFileInput = useRef(null);
 
@@ -28,9 +38,17 @@ const Home = () => {
         <form action="">
           <div className="inputHeaders">
             <div className="depth">
-              <label>Depth:</label> <span>Basic Scan</span> <span>Advanced Scan</span> 
+              <label>Depth:</label>
+                {
+                  depth.map((item, index) => (
+                    <span style={ index === selectedIndex ? {color:"#06A797", borderBottom: "1px solid #06A797"} : {}} onClick = { () => handleClickEvent (index) }>
+                      {item}
+                    </span>
+                  ))
+                }
+               
             </div>
-            <p>Result</p>
+            <p className="resultTag">Result</p>
             <p className="clock"> <AiOutlineClockCircle style={{color:"#333333", fontSize: "22px"}}/> </p>
           </div>
 
@@ -49,14 +67,44 @@ const Home = () => {
             </div>
 
             <div className="result">
+
               <div className="blank">
                 <div className="blankResult"></div>
                 <div className="resultShare">
                   <img src={share} alt="" />
-                  <p>Share Result</p>
+                  <a href="#">Share Result</a>
                 </div>
               </div>
+
+              <div className="noScam">
+                <div className="bg"><img src={frame} alt="#" /></div>
+                <div className="noScamResult">
+                  <img src={success} alt="no scam" />
+                  <p>Scanned... No scam</p>
+                  <p>found in content</p>
+                </div>
+                <div className="resultShare">
+                  <img src={share} alt="" />
+                  <a href="#">Share Result</a>
+                </div>
+              </div>
+
+              <div className="scam">
+                <div className="bg"><img src={frame} alt="#" /></div>
+                <div className="scamResult">
+                  <img src={failure} alt="scam" />
+                  <p>Beware Scam content</p>
+                  <p>flagged!</p>
+                </div>
+                <div className="resultShare">
+                  <img src={share} alt="" />
+                  <a href="#">Share Result</a>
+                </div>
+              </div>
+
             </div>
+
+
           </div>
         </form>
       </div>
