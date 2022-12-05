@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 import clockImg from "../../assets/clock.png";
 import share from "../../assets/share.png";
 import upload from "../../assets/upload.png";
@@ -142,7 +143,12 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <hr />
+
       </div>
+
+      <Footer />
     </div>
    );
 }

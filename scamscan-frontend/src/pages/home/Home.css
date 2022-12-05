@@ -259,6 +259,11 @@
   position: relative;
 }
 
+.downloadSection > hr {
+  margin: 20px 0;
+  color: #06A797;
+}
+
 .downloadBg {
   display: flex;
   overflow: hidden;
@@ -271,7 +276,7 @@
 
 .app {
   position: absolute;
-  text-align: center;
+  /* text-align: center; */
   z-index: 100;
   margin-left: auto;
   margin-right: auto;
