@@ -10,6 +10,7 @@ import failure from "../../assets/failure.png";
 import android from "../../assets/android.png";
 import apple from "../../assets/apple.png";
 import github from "../../assets/github.png";
+import phone from "../../assets/phone.png";
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { useEffect } from "react";
 
@@ -120,10 +121,11 @@ const Home = () => {
           <img src={frame} alt="#" />
           <img src={frame} alt="#" />
           <img src={frame} alt="#" />
+          <img src={frame} alt="#" />
         </div>
         <div className="app">
           <div className="appImg">
-            <img src="" alt="" />
+            <img src={phone} alt="#" />
           </div>
           <div className="appText">
             <h2>Easily access</h2> 

@@ -253,14 +253,112 @@
   color: #000000;
 }
 
-/* .downloadSection {
-  width: 100vw;
+.downloadSection {
+  width: 100%;
   background: #fff;
-  height: 50vh;
+  position: relative;
 }
 
 .downloadBg {
   display: flex;
   overflow: hidden;
   flex-wrap: nowrap;
-} */
+  height: 90vh;
+  width: 100%;
+  opacity: .3;
+  justify-content: center;
+}
+
+.app {
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
+.appImg {
+  display: flex;
+  padding: 35px;
+}
+
+.appImg > img {
+  object-fit: contain;
+  height: 70vh;
+}
+
+.appText {
+  padding: 35px;
+}
+
+.appText > h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 50px;
+
+  color: #07A796;
+}
+
+.appText > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #07A796;
+}
+
+.appText :nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.appText :nth-child(5) {
+  margin-bottom: 30px;
+}
+
+.appText > a {
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 21px;
+
+  text-align: center;
+  padding: 10px 50px;
+  border-radius: 7px;
+
+  color: #FFFFFF;
+  background: #07A796;
+}
+
+.applinks {
+  display: flex;
+  align-items: center;
+}
+
+.applinks :nth-child(2) {
+  padding-top: 20px;
+}
+
+.applinks > span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #06A797;
+}
