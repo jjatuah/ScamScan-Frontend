@@ -7,7 +7,11 @@ import upload from "../../assets/upload.png";
 import frame from "../../assets/Frame.png";
 import success from "../../assets/success.png";
 import failure from "../../assets/failure.png";
+import android from "../../assets/android.png";
+import apple from "../../assets/apple.png";
+import github from "../../assets/github.png";
 import { AiOutlineClockCircle } from 'react-icons/ai';
+import { useEffect } from "react";
 
 
 const Home = () => {
@@ -28,6 +32,8 @@ const Home = () => {
   const handleChange = (event) => {
     const fileUploaded = event.target.files[0];
   }
+
+  useEffect(()=>{}, [selectedIndex])
 
 
   return ( 
@@ -104,9 +110,36 @@ const Home = () => {
 
             </div>
 
-
           </div>
         </form>
+      </div>
+
+      <div className="downloadSection">
+        <div className="downloadBg">
+          <img src={frame} alt="#" />
+          <img src={frame} alt="#" />
+          <img src={frame} alt="#" />
+          <img src={frame} alt="#" />
+        </div>
+        <div className="app">
+          <div className="appImg">
+            <img src="" alt="" />
+          </div>
+          <div className="appText">
+            <h2>Easily access</h2> 
+            <h2>Scamscan App!</h2>
+            <p>Let Scamscan read and</p>
+            <p>check messages for</p>
+            <p>scams.</p>
+            <a href="#">Download Now</a>
+            <div className="applinks">
+              <a href="#"><img src={android} alt="" /></a>
+              <a href="#"><img src={apple} alt="" /></a>
+              <span>or</span>
+              <a href="#"><img src={github} alt="" /></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
    );

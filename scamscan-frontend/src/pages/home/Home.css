@@ -152,6 +152,7 @@
 
 .blank {
   padding: 20px 25px 1px;
+  display: none;
 }
 
 .noScam {
@@ -161,7 +162,6 @@
   background-size: 200px;
   background-position: center; */
   position: relative;
-  display: none;
 }
 
 .scam {
@@ -252,3 +252,15 @@
   text-decoration: none;
   color: #000000;
 }
+
+/* .downloadSection {
+  width: 100vw;
+  background: #fff;
+  height: 50vh;
+}
+
+.downloadBg {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+} */
