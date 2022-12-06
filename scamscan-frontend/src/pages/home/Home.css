@@ -6,7 +6,6 @@
   background: #f3eeee;
 }
 
-/* #d8d4d4; */
 
 .inputSection > form {
   width: 98vw;
@@ -84,7 +83,7 @@
 
 .inputs > textarea {
   width: 100%;
-  height: 350px;
+  height: 450px;
   padding: 20px 25px;
   outline: none;
   border: none;
@@ -152,16 +151,13 @@
 
 .blank {
   padding: 20px 25px 1px;
-  display: none;
+  /* display: none; */
 }
 
 .noScam {
   padding: 20px 25px 1px;
-  /* background: url(../../assets/Frame.png);
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: center; */
   position: relative;
+  display: none;
 }
 
 .scam {
@@ -208,7 +204,7 @@
 .bg {
   background-size: contain;
   background-position: center;
-  height: 350px;
+  height: 450px;
   opacity: .3;
   display: flex;
   align-items: center;
@@ -224,7 +220,7 @@
 
 .blankResult {
   width: 100%;
-  height: 350px;
+  height: 450px;
   padding: 20px 25px;
 }
 
