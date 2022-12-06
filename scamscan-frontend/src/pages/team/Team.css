@@ -1,0 +1,35 @@
+.teamText {
+  background: #002824;
+  padding: 50px 110px;
+}
+
+.teamTextHeader {
+  margin: 20px 0;
+}
+
+.teamTextHeader > h2{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+
+
+  color: #06A797;
+}
+
+.teamTextDesc > p {
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 120%;
+
+  color: #FFFFFF;
+}
+
+.membersContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
