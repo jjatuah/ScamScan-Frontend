@@ -21,11 +21,12 @@ const Team = () => {
           <p>analysis.</p>
         </div>
 
-        <div className="membersContainer">
-          <MemberCard />
-        </div>
-
       </div>
+
+      <div className="membersContainer">
+        <MemberCard />
+      </div>
+
       <Footer />
     </div>
    );
