@@ -8,7 +8,7 @@ import apple from "../../assets/applecrop.png";
 
 
 
-const Footer = ({bg= "#002824", headerColor= "#fff", otherColor = "#fff"}) => {
+const Footer = ({bg= "#002824", headerColor= "#fff", otherColor = "#fff", twImg={twitter}, lkiImg={linkdIn}, fbImg={facebook}}) => {
   return ( 
     <div style={{backgroundColor: bg}} className="footer">
       <div className="footerLinksContainer">
@@ -39,9 +39,9 @@ const Footer = ({bg= "#002824", headerColor= "#fff", otherColor = "#fff"}) => {
         <div style={{color: otherColor}} className="footerLink">
           <h3 style={{color: headerColor}}>Connect</h3>
           <div className="socials">
-            <a href="#"><img src={twitter} alt="twitter logo" /></a>
-            <a href="#"><img src={facebook} alt="facebook logo" /></a>
-            <a href="#"><img src={linkdIn} alt="linkdin logo"/></a>
+            <a href="#"><img src={twImg} alt="twitter logo" /></a>
+            <a href="#"><img src={fbImg} alt="facebook logo" /></a>
+            <a href="#"><img src={lkiImg} alt="linkdin logo"/></a>
           </div>
         </div>
 

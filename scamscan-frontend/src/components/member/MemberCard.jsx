@@ -5,7 +5,7 @@ import instagram from "../../assets/Instagram - Negative.png";
 import linkdin from "../../assets/LinkedIn - Negative.png";
 
 
-const MemberCard = ({name = "Tasiu Kwaplong", role = "Project Lead", profileImg=member1,}) => {
+const MemberCard = ({name = "Tasiu Kwaplong", role = "Project Lead", profileImg=member1, tw="#", ins="#", lki="#"}) => {
   return ( 
     <div className="memberCard">
       <div className="memberImage">
@@ -16,9 +16,9 @@ const MemberCard = ({name = "Tasiu Kwaplong", role = "Project Lead", profileImg=
       <span>{role}</span>
 
       <div className="soMedia">
-        <a href="#"><img src={twitter} alt="twitter logo" /></a>
-        <a href="#"><img src={instagram} alt="instagram logo" /></a>
-        <a href="#"><img src={linkdin} alt="linkdIn logo" /></a>
+        <a href={tw}><img src={twitter} alt="twitter logo" /></a>
+        <a href={ins}><img src={instagram} alt="instagram logo" /></a>
+        <a href={lki}><img src={linkdin} alt="linkdIn logo" /></a>
       </div>
     </div>
    );

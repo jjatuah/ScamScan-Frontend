@@ -31,7 +31,6 @@
 .membersContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-gap: 10px; */
   background: #002824;
   padding: 20px 110px 50px;
   row-gap: 70px;
